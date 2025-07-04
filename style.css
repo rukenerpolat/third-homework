@@ -1,5 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --main-color: #1d1d1d;
+    --color-white: #ffffff;
+    --color-red: #ff0000;
+    --color-blue: #0044ff;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--color-white);
+    color: var(--main-color);
+    padding: 50px;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px;
+    letter-spacing: 3px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.product-card {
+    border: 1px solid var(--main-color);
+    background-color: var(--color-white);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    padding: 20px;
+}
+
+.product-image {
+    width: 100%;
+    padding: 10px;
+}
+
+.product-info h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.product-info p {
+    margin-bottom: auto;
+}
+
+.product-info button {
+    background-color: var(--main-color);
+    color: var(--color-white);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 15px;
+    padding: 10px;
+    transition: 0.3s ease;
+    letter-spacing: 2px;
+}
+
+.product-info button:hover {
+    background: var(--color-blue);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.product-card.out-of-stock::before {
+    content: "tükendi";
+    position: absolute;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    font-size: 0.8em;
+    font-weight: bold;
+    top: 30px;
+    padding: 5px 20px;
+}
+
+@media (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
 }
