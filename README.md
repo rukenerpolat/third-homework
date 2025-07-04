@@ -77,7 +77,7 @@ Responsive Tasarım:
 ```
 
 
-## ```Done:``` Bonus Puan İçin:
+## ```Done:``` Bonus
 - grid-template-columns için repeat(auto-fill, minmax(250px, 1fr));   
 
 - Bazı ürün kartlarına position: absolute ile "Tükendi" gibi bir rozet ekleyerek
