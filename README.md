@@ -1,6 +1,12 @@
 <h1 align="center">CSS Ödevi | Sıfırdan Responsive Ürün Vitrini</h1>
 <h6 align="center"> [Bu repo, Insider&Testinium Tech Hub Developer Bootcamp ödevi için yapılmıştır.]</h6>   
 
+<div align="center">
+    
+🌐 [View Live Page](https://yeni-urun-listesi.netlify.app/)
+
+</div> 
+
 ![third-homework](https://github.com/user-attachments/assets/625bd6ec-0a8a-4e42-b0c1-dd52003c71e0)
 
 
