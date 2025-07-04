@@ -50,6 +50,10 @@ ilk kart:
     margin: 0 auto;
 }
 ```
+
+![hw3](https://github.com/user-attachments/assets/fdbe1670-b182-40ad-b95a-e8ca79465424)
+
+
 Responsive Tasarım: 
 
 ```
