@@ -1,5 +1,5 @@
 <h1 align="center">CSS Ödevi | Sıfırdan Responsive Ürün Vitrini</h1>
-<h6 align="center"> [Bu repo, Insider&Testinium Tech Hub Developer Bootcamp ödevi için yapılmıştır.]</h6>   
+<h6 align="center"> [This repository was created for the Insider & Testinium Tech Hub Developer Bootcamp assignment.]</h6>   
 
 <div align="center">
     
